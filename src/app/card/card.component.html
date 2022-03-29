@@ -1,0 +1,12 @@
+<div class="card">
+    <span class="name">{{card.name}}</span>
+    <img src="{{card.image}}" alt="card">
+    <br *ngIf="!isDetail">
+    <div class="detail-content" *ngIf="isDetail">
+        <span><b>Status: </b>{{card.status}}</span>
+        <span><b>Specie: </b>{{card.species}}</span>
+        <span><b>Origin: </b>{{card.origin.name}}</span>
+    </div>
+</div>
+
+

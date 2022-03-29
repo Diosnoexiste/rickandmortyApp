@@ -1,0 +1,162 @@
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    height: 120px;
+    width: 100%;
+    padding-left: 20px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    margin-bottom: 20px;
+}
+
+.ul-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0; 
+}
+
+@media only screen and (min-width: 425px){
+    .title{
+        width: 425px;
+        height: 120px;
+    }
+
+}
+
+@media only screen and (min-width: 768px){
+    .ul-container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-items: center;
+    }
+
+}
+
+@media only screen and (min-width: 1024px){
+    .ul-container{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        justify-items: center;
+    }
+
+}
+
+@media only screen and (min-width: 1440px){
+    .ul-container{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        justify-items: center;
+    }
+
+
+}
+
+@media only screen and (min-width: 2000px){
+    .ul-container{
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        justify-items: center;
+    }
+
+}
+
+.ch-container{
+    height: 700px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.app-container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.search{
+    padding-bottom: 25px;
+    padding-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+@media only screen and(min-width:768px) {
+
+    .search{
+        justify-content: flex-start;
+        padding-left: 55px;
+    }
+}
+
+.button-pag{
+    padding: 5px 10px;
+    margin-top: 20px;
+    background-color: #21cc2f;
+    border-radius: 10px;
+    border-width: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button-pag:hover{
+    color: #21cc2f;
+    background-color: #e8ae27;
+    cursor: pointer;
+    border-width: 1.2px;
+}
+
+.input-search{
+    height: 2rem;
+    font-size: 1.0625rem;
+    background-color: black;
+    border-bottom: 1px solid #21cc2f;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.input-search:focus-visible{
+    background-color: black;
+    outline-width: 0px;
+    border-color: #e8ae27;
+}
+
+.input-search::placeholder{
+    color: #21cc2f;
+}
+
+
+
+textarea:focus, input:focus {
+    color: #21cc2f;
+}
+
+
+.button-search{
+    padding: 5px 10px;
+    background-color: #e8ae27;
+    border-radius: 10px;
+    border-width: 0;
+    margin-left: 10px;
+}
+
+.button-search:hover{
+    border-width: 1px;
+    background-color: #21cc2f;
+    cursor: pointer;
+}
+
+
+
+
+

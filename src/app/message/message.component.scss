@@ -1,0 +1,21 @@
+.container-mess{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+}
+
+.message{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgba(203, 245, 67, 0.8);
+    border: 2px solid #21cc2f;
+}
+
+span{
+    color: black;
+    font-size: 19px;
+}

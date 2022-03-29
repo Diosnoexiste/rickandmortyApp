@@ -1,0 +1,32 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+    background-color: cadetblue;
+    align-items: center;
+    cursor: pointer;
+    border: 1.5px solid black;
+}
+
+img{
+    width:95%;
+    //padding-bottom: 25px;
+}
+
+.name{
+    padding: 10px 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.detail-content{
+    display: flex !important;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+
+span{
+    padding: 0.3rem;
+}

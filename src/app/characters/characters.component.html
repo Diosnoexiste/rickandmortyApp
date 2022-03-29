@@ -1,0 +1,36 @@
+<nav>
+    <img src="../../assets/images/title.jpeg" alt="Rick&Morty" class="title">
+</nav>
+<div class="app-container">
+    <div class="search">
+        <form>
+            <input type="text" label="Search" [(ngModel)]="nameCh" name="nameCh" placeholder="Search by name" class="input-search">
+            <button type="submit" (click)="getCharacterByName()" class="button-search">
+                <img style="width:15px"  src="https://img.icons8.com/search" alt="icon">
+              </button>
+        </form>
+    </div>
+    <ng-container>
+        <div class="ch-container">
+            <ul class="ul-container" *ngIf="cardList.length > 0 else messageError">
+                    <li *ngFor="let card of cardList" >
+                        <app-card [card]="card" (click)="openDetail(card)"></app-card>
+                    </li>
+            </ul>
+        </div>
+    </ng-container>
+    <div *ngIf="cardList.length > 0 && cardList.length < totalCards" >
+        <button (click)="getPagination()" class="button-pag"> + </button>
+    </div>
+</div>
+
+<app-detail [isDetail]="isDetail" (detailState)="toggleDetailModal()" [cardDetail]="cardDetail"></app-detail>
+
+<ng-template #messageError>
+    <app-message #child ></app-message>
+</ng-template>
+
+
+
+
+

@@ -1,0 +1,7 @@
+<div id="modalDetail" class="modal" *ngIf="isDetail" (click)="closeModalOut($event)">
+        <div class="modal-content">
+            <span class="close" (click)="closeDetail()">&times;</span>
+            <app-card [card]="cardDetail" [isDetail]="isDetail"></app-card>
+        </div>
+</div>
+    

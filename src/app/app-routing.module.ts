@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CharactersComponent } from './characters/characters.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'characters', component: CharactersComponent},
+  { path: '', redirectTo:`/characters`, pathMatch: 'full'},
+  { path: '**', component: PagenotfoundComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
